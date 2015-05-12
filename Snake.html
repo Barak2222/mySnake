@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+</head>
+<body>
+	<header>
+		<div class="jumbotron">
+			<div class="container text-center">
+				<h1>Snake</h1>
+			</div>
+		</div> 
+	</header>
+	<div class="container">
+		<div class="well game">
+			<a class="btn btn-success btn-lg" id="newGame">Start Game</a>
+			<a class="btn btn-default btn-lg"id="options">Options</a>
+			<a class="btn btn-default btn-lg" style="float: right; margin-left:4px;" id="score">0</a> 
+			<a class="btn btn-warning btn-lg" id="pauseOrResume" style="display: none;float: right">Pause</a>
+			<hr />
+			<div id="gameBoard"></div>
+		</div>
+	</div>
+
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+<style>
+#gameBoard{
+	width: 600px;
+	height: 600px;
+	margin: 2px auto;
+}
+.square{
+	width: 15px;
+	height: 15px;
+	background-color: #fff;
+	float: left;
+	border: 1px solid #bbb;
+}
+.snake{
+	background-color: black;
+}
+.food{
+	background-color: blue;
+}
+</style>
+</body>	
+</html>
